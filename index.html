@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Grafik komputerowy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">GRAFIK</a>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Usługi</a>
+        <a href="#about">O mnie</a>
+        <a href="#contact" class="btn">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Projektuję grafiki, które sprzedają</h1>
+          <p>Branding, ilustracje, materiały reklamowe i grafika cyfrowa. Współpracuję z firmami i startupami, tworząc wizualne historie.</p>
+          <a href="#contact" class="btn btn-primary">Zamów projekt</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Przykładowa grafika">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Usługi</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Branding & Logo</h3>
+          <p>Buduję rozpoznawalne marki z unikalnym systemem identyfikacji wizualnej.</p>
+        </div>
+        <div class="card">
+          <h3>Ilustracje</h3>
+          <p>Autorskie ilustracje: od wektorów po wysokiej jakości renderingi.</p>
+        </div>
+        <div class="card">
+          <h3>Materiały reklamowe</h3>
+          <p>Projektuję plakaty, ulotki, banery i grafiki do social media.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <div class="tile"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Projekt 1"></div>
+          <div class="tile"><img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Projekt 2"></div>
+          <div class="tile"><img src="https://images.unsplash.com/photo-1504198266280-5b165f31f9b9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Projekt 3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <h2>O mnie</h2>
+      <div class="about-grid">
+        <div>
+          <p>Nazywam się [Twoje Imię]. Jestem grafikiem komputerowym z kilkuletnim doświadczeniem w projektowaniu identyfikacji wizualnej, ilustracji i materiałów marketingowych. Lubię prostotę i dopracowane detale.</p>
+          <ul>
+            <li>Szybkie terminy realizacji</li>
+            <li>Komunikacja na każdym etapie</li>
+            <li>Pliki w wektorze i przygotowane do druku</li>
+          </ul>
+        </div>
+        <div>
+          <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Fotografia autora">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Kontakt</h2>
+      <p>Masz pomysł? Napisz — odpowiem w ciągu 24 godzin.</p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Imię i nazwisko" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Opisz krótko swój projekt" required></textarea>
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Grafik komputerowy — Wszystkie prawa zastrzeżone.</p>
+      <div class="social">
+        <a href="#">Behance</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
